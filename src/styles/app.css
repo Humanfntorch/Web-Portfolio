@@ -1,0 +1,694 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*
+This allows for gradient animation based on color position on screen
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+  }
+  */
+
+@font-face {
+    font-family: 'Agbalumo';
+    src: url("assets/fonts/Agbalumo-Regular.ttf") format('truetype');
+}
+
+body {
+    font-family: "Agbalumo", sans-serif;
+    line-height: 1.4;
+    /*
+    color: #00ccff;
+    */
+    color: white;
+    height: 100vh;
+    font-weight: 400;
+    width: 100%;
+    height: 100vh;
+    width: 100%;
+    height: 100vh;
+    /*
+    background: linear-gradient(105deg, #0a3033, #2c5054, rgb(31, 143, 154), #336a6f, #14636a);
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease-in-out infinite alternate;
+    */
+
+    /*
+    background: linear-gradient(105deg,  #3975E5,  #543595, #524aB0, #4a5fcb);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease-in-out infinite alternate;
+    */
+
+
+    /*
+    background: linear-gradient(105deg,  #0043ae, #005bc9, #0068d7, #0081f2, #004fbb);
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease-in-out infinite alternate;
+    */
+    background: radial-gradient(circle,
+            /* Shape of the gradient */
+            #1a43bf, 30%,
+            /* Dark blue for the outer ring */
+            #00072d 70%
+            /* Slightly lighter blue for the inner part */
+        );
+    background-size: cover;
+
+
+}
+
+.wrapper {
+    width: 100%;
+    padding: 8rem 20px 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 10px;
+    height: 100vh;
+    position: relative;
+    */
+}
+
+.todos {
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    border-radius: calc(0.1 * 100px);
+    box-shadow: 0px 4px 14px 0px rgba(70, 70, 70, 0.38);
+    justify-content: space-around;
+    background: #fff;
+    font-size: 1rem;
+}
+
+.input-text {
+    width: 87%;
+    padding-right: 5px;
+    padding-left: 10px;
+    border-radius: calc(0.3 * 100px);
+    font-size: 1rem;
+}
+
+.input-text::placeholder {
+    color: #000;
+}
+
+.input-submit {
+    background: transparent;
+    color: #5b5b5b;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 8px;
+}
+
+.input-submit svg {
+    color: green;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.input-text,
+.input-submit {
+    height: 45px;
+    outline: none;
+    border: none;
+}
+
+.submit-warning {
+    font-size: 13px;
+    color: red;
+    margin-top: 5px;
+    display: block;
+}
+
+.active {
+    color: #005bb3;
+}
+
+.aboutHeader {
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    padding: 0.2rem 20px 3rem;
+    /* Adjust padding based on your design */
+}
+
+.about-me {
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 2px 2px;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 2px 5px 3px rgba(255, 217, 0, 0.365),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    background: rgba(70, 130, 180, 0.25);
+}
+
+.education {
+    /* grid-column: span 1; */
+    flex: 1 1 25%;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    /* Add styling as needed */
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 2px 2px;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 2px 5px 3px rgba(255, 217, 0, 0.365),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    background: rgba(70, 130, 180, 0.25);
+    /* Use a slightly more vibrant blue color */
+}
+
+.skills {
+    /* grid-column: span 2; */
+    flex: 1 1 25%;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    /* Add styling as needed */
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 2px 2px;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 2px 5px 3px rgba(255, 217, 0, 0.365),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    background: rgba(70, 130, 180, 0.25);
+    /* Use a slightly more vibrant blue color */
+}
+
+
+
+.education-header {
+    align-items: center;
+    /* Add any additional styles you need for the container */
+    text-align: center;
+    /* Optional: Center align the text horizontally */
+
+}
+
+.divider {
+    border: 1px solid gold;
+    /* Change color and style as needed */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.header {
+    height: 2px;
+    /* Adjust the height of the line as needed */
+    background-color: gold;
+    /* Adjust the color of the line as needed */
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 72px;
+    /* Adjust the vertical position of the line as needed */
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.headerTitle {
+    top: 15px;
+    position: absolute;
+    font-size: 20px;
+    z-index: 3;
+}
+
+.layout-container {
+    flex: 1;
+}
+
+.footer-container {
+    height: 2px;
+    /* Adjust the height of the line as needed */
+    background-color: gold;
+    /* Adjust the color of the line as needed */
+    flex-shrink: 0;
+    width: 100%;
+    margin-top: auto;
+    /* Push the footer to the bottom of the container */
+    z-index: 2;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.logoButton {
+    position: fixed;
+    top: -4900%;
+    /* Adjust the top position as needed */
+    left: 43%;
+    background: none;
+    border: none;
+    z-index: 3;
+}
+
+.logoImage {
+    position: fixed;
+    width: 170px;
+    height: 116px;
+}
+
+
+.homepage {
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    left: 0;
+    top: 40%;
+    margin: 0 auto;
+    text-align: center;
+    text-wrap: balance;
+}
+
+
+.myImage {
+    /*
+    width: 50%;
+    height: 90.5%;
+    */
+    border-radius: 0%;
+    background-image: url("assets/images/homepagePic.jpg");
+    background-size: cover;
+    background-position: center center;
+    z-index: 3;
+    position: absolute;
+    top: 54.7%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 0px 5px #66ccff);
+}
+
+
+.home-to-about {
+    transform: translate(-55%, -50%);
+    line-height: 10px;
+    border: 2px solid gold;
+    border-radius: 12px;
+    color: gold;
+    background-color: #1065c0;
+    margin-top: 100px;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-to-about:hover {
+    background-color: #1e97f3;
+    /* light-blue */
+    color: white;
+}
+
+
+.contact-me {
+    text-align: center;
+}
+
+.contact-form {
+    display: grid;
+    text-align: left;
+    width: 40%;
+    height: 25%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+label,
+input {
+    display: grid;
+}
+
+label {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+input#from_name {
+    width: 500px;
+    height: 30px;
+    background-color: #00072d;
+    color: gold;
+    border-color: #1e97f3;
+    padding-left: 5px;
+}
+
+input#from_name:focus {
+    color: white;
+}
+
+input#from_email {
+    width: 500px;
+    height: 30px;
+    background-color: #00072d;
+    color: gold;
+    border-color: #1e97f3;
+    padding-left: 5px;
+}
+
+input#from_email:focus {
+    color: white;
+}
+
+input#subject {
+    width: 500px;
+    height: 30px;
+    background-color: #00072d;
+    color: gold;
+    border-color: #1e97f3;
+    padding-left: 5px;
+}
+
+input#subject:focus {
+    color: white;
+}
+
+#html_message {
+    width: 500px;
+    height: 100px;
+    background-color: #00072d;
+    color: gold;
+    border-color: #1e97f3;
+    padding-left: 5px;
+}
+
+#html_message:focus {
+    color: white;
+}
+
+
+input#email_submit {
+    line-height: 10px;
+    border: 2px solid gold;
+    border-radius: 12px;
+    color: gold;
+    background-color: #1065c0;
+    width: 250px;
+    transform: translate(50%, 0%);
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input#email_submit:hover {
+    background-color: #1e97f3;
+}
+
+
+/* Target autofill styles for input */
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+    background-color: #00072d !important;
+    /*
+        Set the inset background larger than the width of the text boxes
+        forcing the background color to be the one above, rather than chrome's default... Hacky, 
+        but worky!
+    */
+    -webkit-box-shadow: 0 0 0 1000px #00072d inset !important;
+    -webkit-text-fill-color: gold !important;
+}
+
+input::placeholder {
+    background-color: #00072d !important;
+    -webkit-text-fill-color: gold !important;
+
+    color: gold !important;
+}
+
+
+label[for="error_from_name"] {
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: red;
+}
+
+label[for="error_from_email"] {
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: red;
+}
+
+
+label[for="error_from_subject"] {
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: red;
+}
+
+label[for="error_from_html_message"] {
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: red;
+}
+
+/*
+.about_list {
+    list-style: none;
+}
+
+.about_list a {
+    padding: 20px 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about_list a:hover{
+    color: #005bb3;
+}
+*/
+
+.main_content {
+    max-width: 650px;
+}
+
+.main_content {
+    max-width: 650px;
+}
+
+.main_content h2 {
+    margin-bottom: 15px;
+    line-height: 30px;
+    font-size: 26px;
+}
+
+.main_content p {
+    line-height: 25px;
+}
+
+@media screen and (min-width: 480px) {
+    div.wrapper h1 {
+        font-size: 6rem;
+    }
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects-container > div {
+    text-align: center;
+    box-sizing: border-box;
+    width: calc(50% - 20px);  /* Adjust width and margin as needed */
+    margin: 10px;
+    padding: 16px;
+}
+
+
+.proj-description {
+    text-align: justify;
+    width: 550px;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.proj-link {
+    text-align: justify;
+}
+
+.gold-link {
+    color: gold;
+  }
+  
+  .gold-link:visited {
+    color: #ffed91;  /* Lighter gold color */
+    opacity: 0.4;
+}
+
+
+
+/*
+    NAVBAR
+*/
+.navbar {
+    container: flex;
+    width: 100%;
+}
+
+button {
+    position: fixed;
+    cursor: pointer;
+    background: transparent;
+    ;
+    border: none;
+    z-index: 3;
+    font-size: 20px;
+}
+
+.navbar .toggle {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.menu-nav {
+    position: absolute;
+    background:#e0f2f1;
+    opacity: 0.8;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 2px 2px;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2), inset 2px 5px 3px rgba(255, 217, 0, 0.365),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    right: 1px;
+    top: 70px;
+    width: 0;
+    max-width: 20%;
+    overflow: hidden;
+    z-index: 3;
+    font-size: 18px;
+    transform: translateX(0px);
+    transition: transform ease-in-out 0.3s;
+}
+
+.menu-nav.show-menu {
+    width: 100%;
+    transform: translateX(0px);
+}
+
+.menu-nav li a,
+.menu-nav li span {
+    display: block;
+    padding: 0.4rem;
+    margin-right: 20px;
+    margin-bottom: 2px;
+}
+
+.profileButton {
+    align-items: center;
+    background: transparent;
+    background-color: rgba(0, 0, 255, 0.738);
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 600;
+    width: 65%;
+    height: 60px;
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: calc(0.1 * 100px);
+    box-sizing: border-box;
+    border: none;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Media query for screens smaller than a certain width 
+@media (max-width: 768px) {
+
+    .homepage {
+        background-size: contain;
+    }
+
+    .menu-nav {
+        left: 0px;
+    }
+
+}
+*/
