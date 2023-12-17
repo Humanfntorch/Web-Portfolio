@@ -1,3 +1,9 @@
+# To visit the finished website, please visit:
+> https://web-portfolio-three-sooty.vercel.app/
+
+# This project is a portfolio website I created from scratch using React, HTML and CSS. The website's main purpose is to showcase who I am, what I am capable of, as well as showcase some of the projects I have worked on. I'd be more than delighted for anyone to check it out and let me know what they think!
+## NOTE: The website is not optimized for phone screens as of yet and should be viewed on a PC or laptop. Later updates will optimize performance for mobile as well.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
