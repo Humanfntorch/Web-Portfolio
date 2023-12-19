@@ -30,8 +30,6 @@ body {
             /* Slightly lighter blue for the inner part */
         );
     background-size: cover;
-
-
 }
 
 .wrapper {
@@ -59,13 +57,34 @@ body {
 .about {
     display: flex;
     flex-wrap: wrap;
-    min-height: 100vh;
-    min-width: 90vw;
+
+    /* Smaller screens with a maximum width of 599px */
+    @media only screen and (max-width: 599px) {
+        margin-top: 2%;
+        display: block;
+
+    }
+
+    width: 100%;
+    height: 100%;
+
+
     padding: 0.2rem 20px 3rem;
     /* Adjust padding based on your design */
 }
 
 .about-me {
+
+    /* Smaller screens with a maximum width of 599px */
+    @media only screen and (max-width: 599px) {
+        width: 100%;
+        padding: 4%;
+        padding-right: 14%;
+        padding-left: 14%;
+        margin-bottom: 10%;
+
+    }
+
     flex: 1 1 100%;
     justify-content: center;
     align-items: center;
@@ -73,44 +92,170 @@ body {
     margin: 10px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 10px 10px 2px 2px;
-    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
-        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
-        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
-        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
-        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
-        inset 0 10px rgba(255, 255, 255, 0.2), inset 2px 5px 3px rgba(255, 217, 0, 0.365),
-        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 2px 5px 3px rgba(255, 217, 0, 0.365),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     background: rgba(70, 130, 180, 0.25);
 }
 
+.soft-skills {
+    /* Add styles for soft-skills container if needed */
+}
+
+.about-my-image {
+
+    /* Smaller screens with a maximum width of 599px */
+    @media only screen and (max-width: 599px) {
+        display: block;
+
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.my-image {
+
+    @media only screen and (max-width: 599px) {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-top: 10%;
+        margin-right: 2%;
+        margin-bottom: 4%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    width: 290px;
+    height: 276px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+}
+
+.soft-skill-text-container {
+    /* Add styles for the text container if needed */
+}
+
+.soft-skill-text-content {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+
+/*
+    BEGIN THE TEXT UPDATE SECTION
+*/
+
+
+.Relevant-skillset {
+    /* Add styles for Relevant-skillset container if needed */
+  }
+  
+  .skillset-content {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+  }
+  
+  .gear-logo {
+    width: 50px;
+    height: 46px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  
+  .text-container {
+    text-align: center;
+    max-width: 371px;
+  }
+  
+  .skillset-title {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .skillset-description {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  
+
+  /*
+    END THE TEXT UPDATING SECTION
+  */
+
+
 .education {
-    /* grid-column: span 1; */
+
+    /* Smaller screens with a maximum width of 599px */
+    @media only screen and (max-width: 599px) {
+        width: 100%;
+        padding: 4%;
+        padding-right: 14%;
+        padding-left: 14%;
+        margin-bottom: 10%;
+
+    }
+
     flex: 1 1 25%;
     justify-content: center;
     align-items: center;
     padding: 16px;
-    /* Add styling as needed */
     padding-right: 50px;
     padding-left: 50px;
     margin: 10px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 10px 10px 2px 2px;
-    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
-        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
-        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
-        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
-        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
-        inset 0 10px rgba(255, 255, 255, 0.2), inset 2px 5px 3px rgba(255, 217, 0, 0.365),
-        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 2px 5px 3px rgba(255, 217, 0, 0.365),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     background: rgba(70, 130, 180, 0.25);
     /* Use a slightly more vibrant blue color */
 }
 
 .skills {
+
+    /* Smaller screens with a maximum width of 599px */
+    @media only screen and (max-width: 599px) {
+        width: 100%;
+        padding: 4%;
+        padding-right: 14%;
+        padding-left: 14%;
+        margin-bottom: 10%;
+
+    }
+
     /* grid-column: span 2; */
     flex: 1 1 25%;
     justify-content: center;
@@ -122,15 +267,21 @@ body {
     margin: 10px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 10px 10px 2px 2px;
-    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
-        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
-        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
-        inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25),
-        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
-        inset 0 10px rgba(255, 255, 255, 0.2), inset 2px 5px 3px rgba(255, 217, 0, 0.365),
-        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 2px 5px 3px rgba(255, 217, 0, 0.365),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     background: rgba(70, 130, 180, 0.25);
     /* Use a slightly more vibrant blue color */
 }
@@ -150,6 +301,11 @@ body {
     /* Change color and style as needed */
     margin-top: 10px;
     margin-bottom: 10px;
+
+    /* Smaller screens with a maximum width of 599px */
+    @media only screen and (max-width: 599px) {
+        width: 100%;
+    }
 }
 
 
@@ -188,6 +344,7 @@ body {
     flex-shrink: 0;
     width: 100%;
     margin-top: auto;
+    margin-bottom: 1%;
     /* Push the footer to the bottom of the container */
     z-index: 2;
     justify-content: center;
@@ -224,19 +381,24 @@ body {
 
 
 .homepage {
-    width: 100%;
+    width: 90%;
     height: 90%;
     z-index: 4;
     left: 0;
+
     /* Smaller screens with a maximum width of 599px */
-    @media only screen and (max-width: 599px) 
-    {
-            margin-top: 30%;
+    @media only screen and (max-width: 599px) {
+        margin-top: 30%;
     }
+
     top: 40%;
     margin: 0 auto;
     text-align: center;
     text-wrap: balance;
+}
+
+.homepage-wrapper {
+    overflow: hidden;
 }
 
 
@@ -279,7 +441,13 @@ body {
 
 
 .contact-me {
+    width: 90%;
+    height: 90%;
     text-align: center;
+}
+
+.contact-me-wrapper {
+    overflow: hidden;
 }
 
 .contact-form {
@@ -567,7 +735,7 @@ button {
     margin-right: 20px;
     margin-bottom: 2px;
 
-     
+
 }
 
 .profileButton {

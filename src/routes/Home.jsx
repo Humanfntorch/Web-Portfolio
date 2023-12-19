@@ -56,36 +56,40 @@ const Home = () =>
   let navigate = useNavigate();
   const routeChange = () =>
   {
-      let path = "about";
-      navigate(path);
+    let path = "about";
+    navigate(path);
   }
 
   return (
     <React.Fragment>
-      <Header pageTitle={"Home"}/>
-      <Stars />
-      <div className="homepage">
-        <h1>
-          <AnimateText text={firstHeaderText} delay={delay} />
-        </h1>
-        {isFirstHeaderFinished && (
-          <React.Fragment>
-            <h2>
-              <TypeAnimation
-                sequence={secondHeaderTexts.map((text, index) => [
-                  text,
-                  1000
-                ]).flat()}
-                speed={50}
-                repeat={Infinity}
-                style={{ fontSize: "32px" }}
-              />
-            </h2>
-            <button className="home-to-about" onClick={routeChange}>Learn More</button>
-          </React.Fragment>
-        )}
+      <div className='homepage-wrapper'>
+        <Header pageTitle={"Home"} />
+        <Stars />
+
+        <div className="homepage">
+          <h1>
+            <AnimateText text={firstHeaderText} delay={delay} />
+          </h1>
+          {isFirstHeaderFinished && (
+            <React.Fragment>
+              <h2>
+                <TypeAnimation
+                  sequence={secondHeaderTexts.map((text, index) => [
+                    text,
+                    1000
+                  ]).flat()}
+                  speed={50}
+                  repeat={Infinity}
+                  style={{ fontSize: "32px" }}
+                />
+              </h2>
+              <button className="home-to-about" onClick={routeChange}>Learn More</button>
+            </React.Fragment>
+          )}
+        </div>
+
+        <div className="myImage"></div>
       </div>
-      <div className="myImage"></div>
     </React.Fragment>
   );
 };

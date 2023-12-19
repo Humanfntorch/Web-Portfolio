@@ -55,7 +55,7 @@ const About = () =>
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                             <img src={UU_Logo} alt="University Logo" style={{ width: "50px", height: "46px", marginRight: "30px", marginBottom: "10px" }} />
                             <div style={{ textAlign: "center", maxWidth: "500px" }}>
-                                <h2 style={{ fontSize: "17px", margin: 0 }}>University &nbsp; of &nbsp; Utah 
+                                <h2 style={{ fontSize: "17px", margin: 0 }}>University &nbsp; of &nbsp; Utah
                                 </h2>
                                 <h3 style={{ fontSize: "16px", margin: 0 }}>Bachelor of Science &nbsp; - &nbsp; BS, &nbsp; Physics &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </h3>
                                 <h3 style={{ fontSize: "16px", margin: 0 }}>Minor in Computer Science</h3>
@@ -102,9 +102,9 @@ const About = () =>
                             <img src={CPU_Logo} alt="Computer Programming Logo" style={{ width: "50px", height: "46px", marginRight: "39px", marginBottom: "10px" }} />
                             <div style={{ textAlign: "center", maxWidth: "500px" }}>
 
-                                <h2 style={{ fontSize: "18px", margin: 0 }}>Programming &nbsp; Languages <br/> </h2>
+                                <h2 style={{ fontSize: "18px", margin: 0 }}>Programming &nbsp; Languages <br /> </h2>
                                 <h3 style={{ fontSize: "16px", margin: 0 }}>Java, &nbsp; Python, &nbsp; C/C#, &nbsp; JavaScript, &nbsp; HTML/CSS </h3>
-                                <h2 style={{ fontSize: "18px", margin: 0, paddingTop: "3px" }}>Frameworks <br/></h2>
+                                <h2 style={{ fontSize: "18px", margin: 0, paddingTop: "3px" }}>Frameworks <br /></h2>
                                 <h3 style={{ fontSize: "16px", margin: 0 }}>React, &nbsp; .NET, &nbsp; JUnit, &nbsp; Kivy, &nbsp; Buildozer, &nbsp; TensorFlow </h3>
                             </div>
                         </div>
@@ -114,11 +114,11 @@ const About = () =>
 
 
                     <div className="Relevant-skillset">
-                        <div style={{ display: "flex", alignItems: "left", justifyContent: "center" }}>
-                            <img src={Gear_Logo} alt="Relevant Skillset" style={{ width: "50px", height: "46px", marginRight: "30px", marginBottom: "10px", marginTop:"15px" }} />
-                            <div style={{ textAlign: "center", maxWidth: "371px" }}>
-                                <h2 style={{ fontSize: "18px",  margin: 0 }}>Relevant &nbsp; Skillset </h2>
-                                <h3 style={{ fontSize: "16px",  margin: 0 }}>Object-Oriented Programming, Discrete Data Structures & Algorithms, Machine Learning, AI, Network Security, Mobile Devolopment &nbsp; </h3>
+                        <div className="skillset-content">
+                            <img src={Gear_Logo} alt="Relevant Skillset" className="gear-logo" />
+                            <div className="text-container">
+                                <h2 className="skillset-title">Relevant Skillset</h2>
+                                <h3 className="skillset-description">Object-Oriented Programming, Discrete Data Structures & Algorithms, Machine Learning, AI, Network Security, Mobile Development</h3>
                             </div>
                         </div>
                     </div>
@@ -129,8 +129,8 @@ const About = () =>
                         <div style={{ display: "flex", alignItems: "left", justifyContent: "center" }}>
                             <img src={Scales_Logo} alt="Balanced Scaled Logo" style={{ width: "50px", height: "46px", marginRight: "30px", marginBottom: "10px", marginTop: "15px" }} />
                             <div style={{ textAlign: "center", maxWidth: "371px" }}>
-                                <h2 style={{ fontSize: "18px",  margin: 0 }}>Soft &nbsp; Skills </h2>
-                                <h3 style={{ fontSize: "16px",  margin: 0 }}>Team-Oriented, &nbsp; Problem-Solving, &nbsp; Communication, &nbsp; Design & Implementation, &nbsp; Enthusiastic</h3>
+                                <h2 style={{ fontSize: "18px", margin: 0 }}>Soft &nbsp; Skills </h2>
+                                <h3 style={{ fontSize: "16px", margin: 0 }}>Team-Oriented, &nbsp; Problem-Solving, &nbsp; Communication, &nbsp; Design & Implementation, &nbsp; Enthusiastic</h3>
                             </div>
                         </div>
                     </div>
@@ -154,10 +154,10 @@ const About = () =>
                     </div>
 
                     <div className="soft-skills">
-                        <div style={{ display: "flex", alignItems: "center", justifyContent: "left" }}>
-                            <img src={My_Pic} alt="Me with my dog" style={{ width: "290px", height: "276px", marginRight: "20px", marginBottom: "70px" }} />
-                            <div>
-                                <h2 style={{ fontSize: "17px", textAlign: "center", marginBottom: "60px", marginTop: "20px" }}>
+                        <div className="about-my-image">
+                            <img src={My_Pic} alt="Me with my dog" className="my-image" />
+                            <div className="soft-skill-text-container">
+                                <h2 className="soft-skill-text-content">
                                     Greetings! I'm Jacob Rogers, and I appreciate you taking the time to explore my website, where I aim to give you a glimpse into who I am and my passions.
                                     <br />
                                     <br />
