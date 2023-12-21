@@ -54,10 +54,11 @@ const Home = () =>
 
   /* Navigate to about page when button is clicked */
   let navigate = useNavigate();
-  const routeChange = () =>
-  {
-    let path = "about";
-    navigate(path);
+  const routeChange = (e) =>
+  { 
+      e.preventDefault();
+      let path = "about";
+      navigate(path);
   }
 
   return (
