@@ -30,8 +30,6 @@ body {
             /* Slightly lighter blue for the inner part */
         );
     background-size: cover;
-    overscroll-behavior: none;
-
 }
 
 .wrapper {
