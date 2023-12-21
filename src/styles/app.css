@@ -338,27 +338,23 @@ body {
 
 .footer-container {
     height: 2px;
-    /* Adjust the height of the line as needed */
     background-color: gold;
-    /* Adjust the color of the line as needed */
     flex-shrink: 0;
     width: 100%;
     margin-top: auto;
     margin-bottom: 1%;
-    /* Push the footer to the bottom of the container */
     z-index: 2;
     justify-content: center;
 
     /* Media query for screens with a maximum width of 599px (adjust as needed) */
     @media only screen and (max-width: 599px) {
-
         margin-bottom: 10%;
-        
-        @media only screen and (min-height: 900px){
-            margin-bottom: 65%;
+
+        /* Additional media query for screens with a minimum height of 900px (adjust as needed) */
+        @media only screen and (min-height: 900px) {
+            margin-bottom: 75%;
         }
     }
-
 }
 
 .footer {
@@ -367,8 +363,8 @@ body {
     align-items: center;
     gap: 30px;
     overflow: hidden;
-
 }
+
 
 .logoButton {
     position: fixed;
