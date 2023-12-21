@@ -65,30 +65,29 @@ const Home = () =>
       <div className='homepage-wrapper'>
         <Header pageTitle={"Home"} />
         <Stars />
-
         <div className="homepage">
           <h1>
             <AnimateText text={firstHeaderText} delay={delay} />
           </h1>
           {isFirstHeaderFinished && (
             <React.Fragment>
-              <h2>
-                <TypeAnimation
-                  sequence={secondHeaderTexts.map((text, index) => [
-                    text,
-                    1000
-                  ]).flat()}
-                  speed={50}
-                  repeat={Infinity}
-                  style={{ fontSize: "32px" }}
-                />
-              </h2>
+              <div className='homepage-text'>
+                <h2>
+                  <TypeAnimation
+                    sequence={secondHeaderTexts.map((text, index) => [
+                      text,
+                      1000
+                    ]).flat()}
+                    speed={50}
+                    repeat={Infinity}
+                    style={{ fontSize: "32px" }}
+                  />
+                </h2>
+              </div>
               <button className="home-to-about" onClick={routeChange}>Learn More</button>
             </React.Fragment>
           )}
         </div>
-
-        <div className="myImage"></div>
       </div>
     </React.Fragment>
   );

@@ -352,7 +352,7 @@ body {
     /* Media query for screens with a maximum width of 599px (adjust as needed) */
     @media only screen and (max-width: 599px) {
 
-        margin-bottom: 7%;
+        margin-bottom: 10%;
     }
 
 }
@@ -386,13 +386,16 @@ body {
     height: 116px;
 }
 
+.homepage-wrapper {
+    overflow: hidden;
+}
 
 .homepage {
+    position: relative;
     width: 90%;
     height: 90%;
     z-index: 4;
     left: 0;
-
     /* Smaller screens with a maximum width of 599px */
     @media only screen and (max-width: 599px) {
         margin-top: 30%;
@@ -404,8 +407,29 @@ body {
     text-wrap: balance;
 }
 
-.homepage-wrapper {
-    overflow: hidden;
+
+.homepage-text{
+    height: 90px;
+}
+
+.home-to-about {
+    position: fixed;
+    transform: translate(-55%, -50%);
+    line-height: 10px;
+    border: 2px solid gold;
+    border-radius: 12px;
+    color: gold;
+    background-color: #1065c0;
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-to-about:hover {
+    background-color: #1e97f3;
+    /* light-blue */
+    color: white;
 }
 
 
@@ -418,35 +442,13 @@ body {
     background-image: url("assets/images/homepagePic.jpg");
     background-size: cover;
     background-position: center center;
-    z-index: 3;
+    z-index: 4;
     position: absolute;
     top: 54.7%;
     left: 25%;
     transform: translate(-50%, -50%);
     filter: drop-shadow(0px 0px 5px #66ccff);
 }
-
-
-.home-to-about {
-    transform: translate(-55%, -50%);
-    line-height: 10px;
-    border: 2px solid gold;
-    border-radius: 12px;
-    color: gold;
-    background-color: #1065c0;
-    position: fixed;
-    margin-top: 100px;
-    padding: 20px;
-    font-size: 20px;
-    box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.home-to-about:hover {
-    background-color: #1e97f3;
-    /* light-blue */
-    color: white;
-}
-
 
 .contact-me {
     width: 90%;
