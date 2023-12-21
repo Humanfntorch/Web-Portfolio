@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -15,13 +14,9 @@ body {
     font-family: "Agbalumo", sans-serif;
     line-height: 1.4;
     color: white;
-    height: 100vh;
+    height: 100%;
     font-weight: 400;
     width: 100%;
-    height: 100vh;
-    width: 100%;
-    height: 100vh;
-
     background: radial-gradient(circle,
             /* Shape of the gradient */
             #1a43bf, 30%,
@@ -30,7 +25,7 @@ body {
             /* Slightly lighter blue for the inner part */
         );
     background-size: cover;
-    overscroll-behavior: none;   
+
 }
 
 .wrapper {
@@ -384,10 +379,11 @@ body {
 }
 
 .homepage {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     z-index: 4;
     left: 0;
+
     /* Smaller screens with a maximum width of 599px */
     @media only screen and (max-width: 599px) {
         margin-top: 30%;
@@ -400,7 +396,7 @@ body {
 }
 
 
-.homepage-text{
+.homepage-text {
     height: 90px;
 }
 
