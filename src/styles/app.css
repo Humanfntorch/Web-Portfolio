@@ -30,6 +30,7 @@ body {
             /* Slightly lighter blue for the inner part */
         );
     background-size: cover;
+    overscroll-behavior: none;   
 }
 
 .wrapper {
@@ -392,7 +393,6 @@ body {
 }
 
 .homepage {
-    position: relative;
     width: 90%;
     height: 90%;
     z-index: 4;
