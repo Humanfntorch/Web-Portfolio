@@ -352,7 +352,7 @@ body {
     /* Media query for screens with a maximum width of 599px (adjust as needed) */
     @media only screen and (max-width: 599px) {
 
-        margin-bottom: 13%;
+        margin-bottom: 16%;
     }
 
 }
