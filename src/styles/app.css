@@ -352,7 +352,7 @@ body {
 
         /* Additional media query for screens with a minimum height of 900px (adjust as needed) */
         @media only screen and (min-height: 900px) {
-            margin-bottom: 75%;
+            margin-bottom: 300px;
         }
     }
 }
