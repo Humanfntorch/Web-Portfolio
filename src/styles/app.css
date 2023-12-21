@@ -350,9 +350,8 @@ body {
     @media only screen and (max-width: 599px) {
         margin-bottom: 10%;
 
-        /* Additional media query for screens with a minimum height of 900px (adjust as needed) */
         @media only screen and (min-height: 900px) {
-            margin-bottom: 300px;
+            margin-bottom:300px;
         }
     }
 }
@@ -393,7 +392,6 @@ body {
 }
 
 .homepage {
-    position: relative;
     width: 90%;
     height: 90%;
     z-index: 4;
@@ -445,7 +443,7 @@ body {
     background-image: url("assets/images/homepagePic.jpg");
     background-size: cover;
     background-position: center center;
-    z-index: 4;
+    z-index: 3;
     position: absolute;
     top: 54.7%;
     left: 25%;
