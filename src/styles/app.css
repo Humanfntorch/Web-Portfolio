@@ -352,7 +352,11 @@ body {
     /* Media query for screens with a maximum width of 599px (adjust as needed) */
     @media only screen and (max-width: 599px) {
 
-        margin-bottom: 16%;
+        margin-bottom: 10%;
+        
+        @media only screen and (mad-height: 900px){
+            margin-bottom: 20%;
+        }
     }
 
 }
@@ -421,6 +425,7 @@ body {
     color: gold;
     background-color: #1065c0;
     margin-top: 60px;
+    margin-bottom: 10px;
     padding: 20px;
     font-size: 20px;
     box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
