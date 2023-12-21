@@ -354,8 +354,8 @@ body {
 
         margin-bottom: 10%;
         
-        @media only screen and (mad-height: 900px){
-            margin-bottom: 20%;
+        @media only screen and (min-height: 900px){
+            margin-bottom: 65%;
         }
     }
 
@@ -366,6 +366,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    overflow: hidden;
+
 }
 
 .logoButton {
