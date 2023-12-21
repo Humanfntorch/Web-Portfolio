@@ -349,11 +349,9 @@ body {
 
     /* Media query for screens with a maximum width of 599px (adjust as needed) */
     @media only screen and (max-width: 599px) {
-        margin-bottom: 10%;
-
-        @media only screen and (min-height: 900px) {
-            margin-bottom:300px;
-        }
+        position: fixed; /* or position: absolute; */
+        bottom: 50px; /* Adjust as needed */
+        width: 100%; /* Make it full width */
     }
 }
 
