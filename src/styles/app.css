@@ -14,9 +14,9 @@ body {
     font-family: "Agbalumo", sans-serif;
     line-height: 1.4;
     color: white;
-    height: 100vh;
+    height: 100%;
     font-weight: 400;
-    width: 100vw;
+    width: 100%;
     background: radial-gradient(circle,
             /* Shape of the gradient */
             #1a43bf, 30%,
@@ -25,6 +25,8 @@ body {
             /* Slightly lighter blue for the inner part */
         );
     background-size: cover;
+    overflow-x: hidden;
+
 
 }
 
@@ -32,24 +34,30 @@ body {
     width: 100vw;
     padding: 8rem 20px 3rem;
     height: 100vh;
-     /* Smaller screens with a maximum width of 599px */
-     @media only screen and (max-width: 599px) {
-        @media only screen and (min-height: 900px)
-        {
-            height: 75vh;
-        }
-    }
-
-     /* Smaller screens with a maximum width of 599px */
-     @media only screen and (max-width: 1030px) {
-        @media only screen and (min-height: 1300px)
-        {
-            height: 50vh;
-        }
-    }
     display: flex;
     flex-direction: column;
 }
+
+/* Smaller screens with a maximum width of 599px */
+@media only screen and (max-width: 599px) {
+    /* Adjustments for min-height 900px */
+    @media only screen and (min-height: 900px) {
+        .wrapper {
+            height: 75vh;
+        }
+    }
+}
+
+/* Smaller screens with a maximum width of 1030px */
+@media only screen and (max-width: 1030px) {
+    /* Adjustments for min-height 1300px */
+    @media only screen and (min-height: 1300px) {
+        .wrapper {
+            height: 50vh;
+        }
+    }
+}
+
 
 
 .active {
@@ -68,23 +76,43 @@ body {
 .about {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem 20px 3rem;
 
+    /* Adjust padding based on your design */
     /* Smaller screens with a maximum width of 599px */
     @media only screen and (max-width: 599px) {
         margin-top: 2%;
         display: block;
 
     }
-
-    width: 100%;
-    height: 100%;
-
-
-    padding: 0.2rem 20px 3rem;
-    /* Adjust padding based on your design */
 }
 
 .about-me {
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 2px 2px;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+        inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2),
+        inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+        inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2),
+        inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
+        inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2),
+        inset 2px 5px 3px rgba(255, 217, 0, 0.365),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    background: rgba(70, 130, 180, 0.25);
 
     /* Smaller screens with a maximum width of 599px */
     @media only screen and (max-width: 599px) {
@@ -95,30 +123,6 @@ body {
         margin-bottom: 10%;
 
     }
-
-    flex: 1 1 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    margin: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px 10px 2px 2px;
-    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
-    inset 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 10px rgba(255, 255, 255, 0.2),
-    inset 0 10px 20px rgba(255, 255, 255, 0.25),
-    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
-    inset 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 10px rgba(255, 255, 255, 0.2),
-    inset 0 10px 20px rgba(255, 255, 255, 0.25),
-    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
-    inset 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 10px rgba(255, 255, 255, 0.2),
-    inset 2px 5px 3px rgba(255, 217, 0, 0.365),
-    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    background: rgba(70, 130, 180, 0.25);
 }
 
 .soft-skills {
@@ -126,19 +130,22 @@ body {
 }
 
 .about-my-image {
+    display: flex;
+    align-items: center;
+    justify-content: left;
 
     /* Smaller screens with a maximum width of 599px */
     @media only screen and (max-width: 599px) {
         display: block;
 
     }
-
-    display: flex;
-    align-items: center;
-    justify-content: left;
 }
 
 .my-image {
+    width: 290px;
+    height: 276px;
+    margin-right: 20px;
+    margin-bottom: 70px;
 
     @media only screen and (max-width: 599px) {
         display: block;
@@ -151,11 +158,6 @@ body {
         justify-content: center;
 
     }
-
-    width: 290px;
-    height: 276px;
-    margin-right: 20px;
-    margin-bottom: 70px;
 }
 
 .soft-skill-text-container {
@@ -216,17 +218,6 @@ body {
 
 
 .education {
-
-    /* Smaller screens with a maximum width of 599px */
-    @media only screen and (max-width: 599px) {
-        width: 100%;
-        padding: 4%;
-        padding-right: 14%;
-        padding-left: 14%;
-        margin-bottom: 10%;
-
-    }
-
     flex: 1 1 25%;
     justify-content: center;
     align-items: center;
@@ -237,25 +228,22 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 10px 10px 2px 2px;
     -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
-    inset 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 10px rgba(255, 255, 255, 0.2),
-    inset 0 10px 20px rgba(255, 255, 255, 0.25),
-    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+        inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2),
+        inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
-    inset 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 10px rgba(255, 255, 255, 0.2),
-    inset 0 10px 20px rgba(255, 255, 255, 0.25),
-    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+        inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2),
+        inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
-    inset 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 10px rgba(255, 255, 255, 0.2),
-    inset 2px 5px 3px rgba(255, 217, 0, 0.365),
-    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+        inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2),
+        inset 2px 5px 3px rgba(255, 217, 0, 0.365),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     background: rgba(70, 130, 180, 0.25);
     /* Use a slightly more vibrant blue color */
-}
-
-.skills {
 
     /* Smaller screens with a maximum width of 599px */
     @media only screen and (max-width: 599px) {
@@ -266,6 +254,9 @@ body {
         margin-bottom: 10%;
 
     }
+}
+
+.skills {
 
     /* grid-column: span 2; */
     flex: 1 1 25%;
@@ -279,22 +270,32 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 10px 10px 2px 2px;
     -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
-    inset 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 10px rgba(255, 255, 255, 0.2),
-    inset 0 10px 20px rgba(255, 255, 255, 0.25),
-    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+        inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2),
+        inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
-    inset 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 10px rgba(255, 255, 255, 0.2),
-    inset 0 10px 20px rgba(255, 255, 255, 0.25),
-    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+        inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2),
+        inset 0 10px 20px rgba(255, 255, 255, 0.25),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5),
-    inset 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 10px rgba(255, 255, 255, 0.2),
-    inset 2px 5px 3px rgba(255, 217, 0, 0.365),
-    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+        inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 10px rgba(255, 255, 255, 0.2),
+        inset 2px 5px 3px rgba(255, 217, 0, 0.365),
+        inset 0 -15px 30px rgba(0, 0, 0, 0.3);
     background: rgba(70, 130, 180, 0.25);
     /* Use a slightly more vibrant blue color */
+
+    /* Smaller screens with a maximum width of 599px */
+    @media only screen and (max-width: 599px) {
+        width: 100%;
+        padding: 4%;
+        padding-right: 14%;
+        padding-left: 14%;
+        margin-bottom: 10%;
+
+    }
 }
 
 
@@ -373,15 +374,15 @@ body {
     top: -4900%;
     /* Adjust the top position as needed */
 
-    /* Smaller screens with a maximum width of 599px */
-    @media only screen and (max-width: 599px) {
-        left: 30%;
-    }
-
     left: 43%;
     background: none;
     border: none;
     z-index: 3;
+
+    /* Smaller screens with a maximum width of 599px */
+    @media only screen and (max-width: 599px) {
+        left: 30%;
+    }
 }
 
 .logoImage {
@@ -390,7 +391,7 @@ body {
     height: 116px;
 }
 
-.homepage-wrapper{
+.homepage-wrapper {
     overflow: -moz-hidden-unscrollable;
     overflow: hidden;
 
@@ -405,15 +406,16 @@ body {
     margin: 0 auto;
     text-align: center;
     text-wrap: balance;
+}
 
-    /* Smaller screens with a maximum width of 599px */
-    @media only screen and (max-width: 599px) {
-        @media only screen and (min-height: 900px)
-        {
+/* Smaller screens with a maximum width of 599px */
+@media only screen and (max-width: 599px) {
+    /* Adjustments for min-height 900px */
+    @media only screen and (min-height: 900px) {
+        .homepage {
             margin-top: 30%;
         }
     }
-
 }
 
 
@@ -724,6 +726,10 @@ button {
     width: 0;
     max-width: 20%;
     overflow: hidden;
+    z-index: 3;
+    font-size: 18px;
+    transform: translateX(0px);
+    transition: transform ease-in-out 0.3s;
 
     /* Smaller screens with a maximum width of 599px */
     @media only screen and (max-width: 599px) {
@@ -733,11 +739,6 @@ button {
         grid-gap: 2px;
         right: 0%;
     }
-
-    z-index: 3;
-    font-size: 18px;
-    transform: translateX(0px);
-    transition: transform ease-in-out 0.3s;
 }
 
 .menu-nav.show-menu {
