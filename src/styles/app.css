@@ -408,15 +408,12 @@ body {
     text-wrap: balance;
 }
 
-/* Smaller screens with a maximum width of 599px */
-@media only screen and (max-width: 599px) {
-    /* Adjustments for min-height 900px */
-    @media only screen and (min-height: 900px) {
-        .homepage {
-            margin-top: 30%;
-        }
+@media only screen and (max-width: 599px) and (min-height: 900px) {
+    .homepage {
+        margin-top: 30%;
     }
 }
+
 
 
 .homepage-text {
