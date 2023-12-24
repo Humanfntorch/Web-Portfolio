@@ -49,9 +49,9 @@ body {
 }
 
 /* Smaller screens with a maximum width of 1030px */
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1000px) {
     /* Adjustments for min-height 1300px */
-    @media only screen and (min-height: 1300px) {
+    @media only screen and (min-height: 1200px) {
         .wrapper {
             height: 50vh;
         }
