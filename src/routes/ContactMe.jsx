@@ -86,7 +86,7 @@ const ContactMe = () =>
     return (
         <React.Fragment>
             <div className="contact-me-wrapper">
-                <Header pageTitle={"Contact Me"} />
+                <Header pageTitle={"Contact"} />
                 <div className="contact-me">
                     <form className="contact-form" onSubmit={sendEmail}>
                         <input type="hidden" name="contact_number" />
