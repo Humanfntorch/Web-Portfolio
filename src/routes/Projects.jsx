@@ -96,26 +96,25 @@ const Projects = () =>
             <div className="projects-container">
                     {projs.map((proj, index) => (
                         <React.Fragment>
-                            <div key={index} className={proj.clName}>
+                            <div key={index} className="project">
                                 
                                 <div className="proj-title">
-                                    <h2 style={{ color: "gold", fontSize:"32px" }} >{proj.title}</h2>
+                                    <h2>{proj.title}</h2>
                                 </div>
 
                                 <div className="proj-sample">
                                     {proj.isVideo ?
                                         (
-                                            <video width="550" height="300" controls >
+                                            <video className="proj-video" controls >
                                                 <source src={proj.sample} type="video/mp4" />
                                             </video>
                                         ) :
 
                                         (
                                             <img
-                                                src={proj.sample}
+                                                src={proj.sample} 
                                                 alt="Project representation"
                                                 className="proj-image"
-                                                width="550" height="300"
                                             />
                                         )
                                     }
