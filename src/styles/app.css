@@ -38,7 +38,7 @@ body {
     flex-direction: column;
 }
 
-/* Smaller screens with a maximum width of 599px */
+/* Mobile portrait mode */
 @media only screen and (max-width: 599px) {
     /* Adjustments for min-height 750px */
     @media only screen and (min-height: 750px) {
@@ -48,9 +48,17 @@ body {
     }
 }
 
-/* Smaller screens with a maximum width of 1030px */
+/* Tablet portrait mode*/
 @media only screen and (max-width: 1300px) {
-    /* Adjustments for min-height 1300px */
+    @media only screen and (min-height: 1000px) {
+        .wrapper {
+            height: 90vh;
+        }
+    }
+}
+
+/* Tablet landscape mode */
+@media only screen and (max-width: 1400px) {
     @media only screen and (min-height: 1000px) {
         .wrapper {
             height: 90vh;
