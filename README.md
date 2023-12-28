@@ -2,7 +2,7 @@
 > https://web-portfolio-three-sooty.vercel.app/
 
 # This project is a portfolio website I created from scratch using React, HTML and CSS. The website's main purpose is to showcase who I am, what I am capable of, as well as showcase some of the projects I have worked on. I'd be more than delighted for anyone to check it out and let me know what they think!
-## NOTE: The website is not optimized for phone screens as of yet and should be viewed on a PC or laptop. Later updates will optimize performance for mobile as well.
+## NOTE: The website has been mostly optimized for mobile devices (phones, tablets, etc..) when viewed in landscape mode! Optimizations were done for average phone and tablet viewports (excluding most niche devices like galaxy fold or excessively large phones). Final step in production will be to optimize portrait mode for phones and potentially implementing optimization for the galaxy fold and very small viewports.
 
 # Getting Started with Create React App
 
