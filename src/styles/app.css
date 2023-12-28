@@ -383,6 +383,17 @@ body {
     }
 }
 
+/* Mobile landscape mode */
+@media only screen and (max-width: 950px) {
+    /* Adjustments for min-height 750px */
+    @media only screen and (min-height: 300px) and (max-height: 500px) {
+        .logoButton{
+            left:40%;
+        }
+    }
+}
+
+
 .logoImage {
     position: fixed;
     width: 170px;
@@ -406,26 +417,16 @@ body {
     text-wrap: balance;
 }
 
-@media only screen and (max-width: 599px) and (min-height: 750px) {
-    .homepage {
-        margin-top: 30%;
-    }
-}
-
-
-/* Tablet portrait mode*/
-@media only screen and (min-width: 700px) and (max-width: 1025px) {
-    @media only screen and (min-height: 700px) {
-        .homepage{
-            margin-top: 13%;
-        }
-    }
-}
-
-
-
 .homepage-text {
     height: 90px;
+}
+
+.homepage-header-one {
+    font-size: 60px;
+}
+
+.homepage-header-two {
+    font-size: 32px;
 }
 
 .home-to-about {
@@ -449,6 +450,70 @@ body {
     color: white;
 }
 
+/* Small Mobile portrait mode */
+@media only screen and (max-width: 599px) and (min-height: 650px) {
+    .homepage {
+        margin-top: 10%;
+    }
+
+    .homepage-header-one {
+        font-size: 36px;
+    }
+
+    .homepage-header-two {
+        font-size: 24px;
+    }
+}
+
+
+/* Large Mobile portrait mode */
+@media only screen and (max-width: 599px) and (min-height: 750px) {
+    .homepage {
+        margin-top: 30%;
+    }
+
+    .homepage-header-one {
+        font-size: 30px;
+    }
+
+    .homepage-header-two {
+        font-size: 24px;
+    }
+}
+
+
+/* Tablet portrait mode*/
+@media only screen and (min-width: 700px) and (max-width: 1025px) {
+    @media only screen and (min-height: 700px) {
+        .homepage {
+            margin-top: 13%;
+        }
+    }
+}
+
+
+/* Mobile landscape mode */
+@media only screen and (max-width: 950px) {
+    /* Adjustments for min-height 750px */
+    @media only screen and (min-height: 300px) and (max-height: 500px) {
+        .homepage-text {
+            height: 50px;
+        }
+
+        .homepage-header-one {
+            font-size: 32px;
+        }
+
+        .homepage-header-two {
+            font-size: 20px;
+        }
+
+        .home-to-about {
+            font-size: 18px;
+            margin-top: 40px;
+        }
+    }
+}
 
 .myImage {
     /*
@@ -626,7 +691,7 @@ label[for="error_from_html_message"] {
 
         .contact-me-wrapper {
             overflow: hidden;
-            
+
         }
 
         .contact-me {
@@ -638,7 +703,7 @@ label[for="error_from_html_message"] {
             text-align: center;
         }
 
-        .contact-form {            
+        .contact-form {
             width: 300px;
             height: fit-content;
         }
@@ -709,7 +774,7 @@ label[for="error_from_html_message"] {
 /* Tablet portrait mode*/
 @media only screen and (min-width: 700px) and (max-width: 1025px) {
     @media only screen and (min-height: 700px) {
-        .contact-me-wrapper{
+        .contact-me-wrapper {
             margin-top: 10%;
         }
     }
@@ -733,11 +798,14 @@ label[for="error_from_html_message"] {
     line-height: 25px;
 }
 
+
+/* MAYBE IMPORTANT???
 @media screen and (min-width: 480px) {
     div.wrapper h1 {
         font-size: 6rem;
     }
 }
+*/
 
 .projects-container {
     display: flex;

@@ -67,13 +67,13 @@ const Home = () =>
         <Header pageTitle={"Home"} />
         <Stars />
         <div className="homepage">
-          <h1>
+          <h1 className='homepage-header-one'>
             <AnimateText text={firstHeaderText} delay={delay} />
           </h1>
           {isFirstHeaderFinished && (
             <React.Fragment>
               <div className='homepage-text'>
-                <h2>
+                <h2 className="homepage-header-two">
                   <TypeAnimation
                     sequence={secondHeaderTexts.map((text, index) => [
                       text,
@@ -81,7 +81,6 @@ const Home = () =>
                     ]).flat()}
                     speed={50}
                     repeat={Infinity}
-                    style={{ fontSize: "32px" }}
                   />
                 </h2>
               </div>
