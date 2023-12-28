@@ -22,6 +22,7 @@ const projs = [
         link: "https://github.com/Humanfntorch/MachineLearning.git",
         isVideo: false,
         clName: "machinelearning",
+        index: 0,
     },
     {
         title: "Network Security Library",
@@ -31,6 +32,7 @@ const projs = [
         link: "https://github.com/Humanfntorch/Network-Security.git",
         isVideo: false,
         clName: "networksecurity",
+        index: 1,
     },
     {
         title: "Checklist",
@@ -40,6 +42,7 @@ const projs = [
         link: "https://github.com/Humanfntorch/Checklist.git",
         isVideo: true,
         clName: "checklist",
+        index: 2,
     },
     {
         title: "Tic Tac Toe",
@@ -49,6 +52,7 @@ const projs = [
         link: "https://github.com/Humanfntorch/Tic-Tac-Toe.git",
         isVideo: true,
         clName: "tictactoe",
+        index: 3,
     },
     {
         title: "AI - PacMan",
@@ -58,6 +62,7 @@ const projs = [
         link: "https://gitfront.io/r/Humanfntorch/CQJnky8YDVBF/AI/",
         isVideo: false,
         clName: "aipacman",
+        index: 4,
     },
     {
         title: "Tank Wars",
@@ -67,6 +72,7 @@ const projs = [
         link: "https://gitfront.io/r/Humanfntorch/UWtfU7eXdLWs/Tank-Wars/",
         isVideo: true,
         clName: "tankwars",
+        index: 5,
     },
     {
         title: "SpamScanner",
@@ -76,6 +82,7 @@ const projs = [
         link: "https://github.com/Humanfntorch/SpamScanner-App.git",
         isVideo: true,
         clName: "spamscanner",
+        index: 6,
     },
     {
         title: "Spreadsheet",
@@ -85,6 +92,7 @@ const projs = [
         link: "https://gitfront.io/r/Humanfntorch/de5MquQfYNYT/Spreadsheet/",
         isVideo: true,
         clName: "spreadsheet",
+        index: 7,
     }
 ];
 
@@ -94,9 +102,9 @@ const Projects = () =>
         <React.Fragment>
             <Header pageTitle={"Projects"} />
             <div className="projects-container">
-                    {projs.map((proj, index) => (
-                        <React.Fragment>
-                            <div key={index} className="project">
+                    {projs.map((proj) => (
+                        <React.Fragment key={proj.index} >
+                            <div className="project">
                                 
                                 <div className="proj-title">
                                     <h2>{proj.title}</h2>

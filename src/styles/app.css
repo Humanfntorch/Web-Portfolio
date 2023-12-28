@@ -413,6 +413,16 @@ body {
 }
 
 
+/* Tablet portrait mode*/
+@media only screen and (min-width: 700px) and (max-width: 1025px) {
+    @media only screen and (min-height: 700px) {
+        .homepage{
+            margin-top: 13%;
+        }
+    }
+}
+
+
 
 .homepage-text {
     height: 90px;
@@ -696,12 +706,14 @@ label[for="error_from_html_message"] {
     }
 }
 
-
 /* Tablet portrait mode*/
-@media only screen and (min-width: 700px) and (max-width: 1199px) {
-    @media only screen and (min-height: 700px) {}
+@media only screen and (min-width: 700px) and (max-width: 1025px) {
+    @media only screen and (min-height: 700px) {
+        .contact-me-wrapper{
+            margin-top: 10%;
+        }
+    }
 }
-
 
 .main_content {
     max-width: 650px;

@@ -90,7 +90,7 @@ const ContactMe = () =>
                 <div className="contact-me">
                     <form className="contact-form" onSubmit={sendEmail}>
                         <input type="hidden" name="contact_number" />
-                        <label for="nameLabel"> Name
+                        <label htmlFor="nameLabel"> Name
                             <input type="text" id="from_name" name="from_name" value={state.from_name} onChange={handleChange} />
 
                             {state.error_from_name && (
@@ -98,7 +98,7 @@ const ContactMe = () =>
                             )}
 
                         </label>
-                        <label for="emailLabel"> Email
+                        <label htmlFor="emailLabel"> Email
                             <input type="email" id="from_email" name="from_email" value={state.from_email} onChange={handleChange} />
 
                             {state.error_from_email && (
@@ -106,7 +106,7 @@ const ContactMe = () =>
                             )}
 
                         </label>
-                        <label for="subjectLabel"> Subject
+                        <label htmlFor="subjectLabel"> Subject
                             <input type="text" id="subject" name="subject" value={state.subject} onChange={handleChange} />
 
                             {state.error_subject && (
@@ -114,7 +114,7 @@ const ContactMe = () =>
                             )}
 
                         </label>
-                        <label for="messageLabel"> Message
+                        <label htmlFor="messageLabel"> Message
                             <textarea id="html_message" name="html_message" value={state.html_message} onChange={handleChange} />
 
                             {state.error_html_message && (
