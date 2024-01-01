@@ -24,7 +24,7 @@ const About = () =>
                     <div className="education-header">
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                             <EducationIcon style={{ width: "80px", height: "66px", marginRight: "20px" }} />
-                            <h2 style={{ fontSize: "36px", textAlign: "center", margin: 0 }}>Education</h2>
+                            <h2 style={{ fontSize: "30px", textAlign: "center", margin: 0 }}>Education</h2>
                         </div>
                     </div>
                     <br />
@@ -92,7 +92,7 @@ const About = () =>
                     <div className="skills-header">
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                             <SkillIcon style={{ width: "80px", height: "66px", marginRight: "20px" }} />
-                            <h2 style={{ fontSize: "36px", textAlign: "center", margin: 0 }}>Skills</h2>
+                            <h2 style={{ fontSize: "30px", textAlign: "center", margin: 0 }}>Skills</h2>
                         </div>
                     </div>
                     <br />
@@ -149,7 +149,7 @@ const About = () =>
                     <div className="about-header">
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                             <InfoIcon style={{ width: "80px", height: "66px", marginRight: "20px" }} />
-                            <h2 style={{ fontSize: "36px", textAlign: "center", margin: 0 }}>More About Me</h2>
+                            <h2 style={{ fontSize: "30px", textAlign: "center", margin: 0 }}>More About Me</h2>
                         </div>
                     </div>
 
