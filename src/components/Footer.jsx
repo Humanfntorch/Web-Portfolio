@@ -26,7 +26,7 @@ const Footer = ({ pageTitle }) => {
           <FaInstagram style={{ width: "30px", height: "35px", margin: "10px", color: "gold" }}></FaInstagram>
         </Link>
 
-        <a href="/cv.pdf" download>
+        <a href="/Jacob_Rogers_Resume.pdf" download>
           <FiDownload style={{ width: "30px", height: "35px", margin: "10px", color: "gold" }}></FiDownload>
         </a>
 
